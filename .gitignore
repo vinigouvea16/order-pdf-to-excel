@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# PyInstaller build output
+build/
+dist/
+
+# Real order data (never publish actual customer orders)
+pedidos/
+*.pdf
+*.xlsx
+*.xls
+!examples/*.pdf
+!examples/*.xlsx
+~$*
+
+# Superseded by main.py / pdf_reader.py / excel_writer.py — kept locally, not published
+extract_text.py
+extract_text.spec
+data-fetch-rbr.spec
+pdf-data-fetch-rbr.py
+xlsfile.py
+xlsfilevertical.py
+old scripts/
+
+# Local environment overrides
+.env
+
+# Editor
+.vscode/
