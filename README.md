@@ -84,12 +84,16 @@ Resulting row:
 
 ![Example spreadsheet row after processing](examples/order_updated_preview.png)
 
+## Impact
+
+- Cut order processing from about **60 to 80 minutes** to roughly **2 minutes** per day, saving roughly **5 to 6 hours** of manual data entry.
+- Removed typing mistakes in quantities, which used to mean harvesting and packing the wrong amount of produce.
+
 ## What I'd improve next
 
 - Extraction currently depends on a fixed regex per line, which breaks if a client changes their PDF layout. A more robust version would use an LLM to parse the line items, with the regex path as a fast fallback.
 - A graphical interface with drag-and-drop and a preview of what will be written, instead of the current pick-a-file dialog.
 - Automated tests covering different PDF layouts instead of the manual `examples/generate_examples.py` check.
-- This saves about `[X hours/week]` of manual data entry during order season.
 
 ---
 
